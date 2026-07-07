@@ -1,0 +1,16 @@
+name: "Xiaozhi Zing MP3 Server"
+description: "Proxy API Zing MP3 chuyển đổi định dạng cho Xiaozhi Music"
+version: "1.0.0"
+slug: "xiaozhi_zing_mp3"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armv7
+ports:
+  5005/tcp: 5005
+  5555/tcp: 5555
+options:
+  MP3_API_URL: "http://localhost:5555"
+schema:
+  MP3_API_URL: str
